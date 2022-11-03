@@ -26,11 +26,11 @@ cmake -B build -D BUILD_SHARED_LIBS=YES -D CMAKE_BUILD_TYPE=Release -D CMAKE_Swi
 ```
 
 ```cmd
-ninja -C build SwiftWin32 UICatalog
+ninja -C build SwiftWin32 TeatAppDemo
 ```
 
 ```cmd
-%CD%\build\bin\UICatalog.exe
+%CD%\build\bin\TeatAppDemo.exe
 ```
 
 ### Swift Package Manager
