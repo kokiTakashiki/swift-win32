@@ -133,7 +133,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
     self.stepper.value = 2
     self.stepperLabel.text = String(Int(self.stepper.value))
-    self.stepper.addTarget(self, action: UICatalog.stepperValueDidChange(_:),
+    self.stepper.addTarget(self, action: TeatAppDemo.stepperValueDidChange(_:),
                            for: .valueChanged)
 
     self.tableview.dataSource = self
