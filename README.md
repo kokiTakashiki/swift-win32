@@ -23,8 +23,13 @@ The following example session shows how to build with CMake 3.16 or newer.
 
 ```cmd
 cmake -B build -D BUILD_SHARED_LIBS=YES -D CMAKE_BUILD_TYPE=Release -D CMAKE_Swift_FLAGS="-sdk %SDKROOT%" -G Ninja -S .
-ninja -C build SwiftWin32 UICatalog
+```
 
+```cmd
+ninja -C build SwiftWin32 UICatalog
+```
+
+```cmd
 %CD%\build\bin\UICatalog.exe
 ```
 
