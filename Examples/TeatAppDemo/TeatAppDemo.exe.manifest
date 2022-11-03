@@ -6,7 +6,7 @@
 
   <!-- assembly identity -->
   <asmv1:assemblyIdentity
-    name="org.compnerd.swift-win32.UICatalog"
+    name="org.compnerd.swift-win32.TeatAppDemo"
     processorArchitecture="*"
     type="win32"
     version="1.0.0.0"/>

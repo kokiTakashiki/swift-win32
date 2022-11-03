@@ -89,7 +89,7 @@ final class TeatAppDemo: ApplicationDelegate, SceneDelegate {
     self.window = Window(windowScene: windowScene)
 
     window.rootViewController = ViewController()
-    window.rootViewController?.title = "UICatalog"
+    window.rootViewController?.title = "TeatAppDemo"
 
     window.addSubview(self.label)
     window.addSubview(self.button)

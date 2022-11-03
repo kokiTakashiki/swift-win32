@@ -28,6 +28,7 @@ let SwiftWin32 = Package(
     .library(name: "SwiftWin32UI", type: .dynamic, targets: ["SwiftWin32UI"]),
     .executable(name: "UICatalog", targets: ["UICatalog"]),
     .executable(name: "Calculator", targets: ["Calculator"]),
+    .executable(name: "TeatAppDemo", targets: ["TeatAppDemo"]),
   ],
   dependencies: [
     // NOTE(compnerd) require main as no current release has support for the
@@ -94,6 +95,26 @@ let SwiftWin32 = Package(
         "CMakeLists.txt",
         "Info.plist",
         "UICatalog.exe.manifest",
+      ],
+      resources: [
+        .copy("Assets/CoffeeCup.jpg"),
+      ],
+      swiftSettings: [
+        .unsafeFlags([
+          "-parse-as-library",
+        ]),
+      ]
+    ),
+    .executableTarget(
+      name: "TeatAppDemo",
+      dependencies: [
+        "SwiftWin32",
+      ],
+      path: "Examples/TeatAppDemo",
+      exclude: [
+        "CMakeLists.txt",
+        "Info.plist",
+        "TeatAppDemo.exe.manifest",
       ],
       resources: [
         .copy("Assets/CoffeeCup.jpg"),
